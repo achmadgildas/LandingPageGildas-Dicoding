@@ -81,7 +81,7 @@ main .content .content-description .title{
     margin-block: 1rem;
 }
 
-main ,.content .content-description p{
+main .content .content-description p{
     line-height: 1.7rem;
     font-size: 1.2rem;
 }
@@ -158,3 +158,35 @@ main aside .social-media li a{
 main aside .social-media li a:hover{
     color: #89b0d9;
 }
+
+@media screen and (max-width: 768px){
+    header.navbar-container{
+        flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul{
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main{
+        padding: 1rem 3rem;
+    }
+
+    main .content{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .content .content-description p{
+        font-size: 1rem;
+    }
+
+    main .content .content-image{
+        order: -1;
+    }
+
+}
+
+
+
